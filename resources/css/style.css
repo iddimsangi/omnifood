@@ -97,9 +97,31 @@ h1{
   height: 100px;
     width: auto;
     float: left;
+    margin-top: 20px;
 }
 
 .min-nav {
     list-style: none;
     float: right;
+    margin-top: 50px;
+}
+.min-nav li{
+    display: inline-block;
+    margin-left: 40px;
+   
+}
+.min-nav li a:link,
+.min-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition:border-bottom:0.2s;
+    
+}
+.min-nav li a:hover,
+.min-nav li a:active{
+    border-bottom: 2px solid #cb6c18; 
 }
