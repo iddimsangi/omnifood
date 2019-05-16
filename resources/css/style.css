@@ -22,6 +22,9 @@ html{
     max-width: 1140px;
     margin: 0 auto;
 }
+section{
+    padding: 80px 0px;
+}
 
 /*------------------------------------------------*/
 /*-------------HEADER SECTION-----------------------*/
@@ -43,17 +46,34 @@ header{
 /*------------------------------------------------*/
 /*-------------HEADING-----------------------*/
 /*------------------------------------------------*/
+h1,h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
 h1{
     margin-top: 0;/**clear the top space of h1**/
     margin-bottom: 20px;
     font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 3px;
     color: #fff;
+    word-spacing: 3px;
 }
-
+h2{
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: " ";
+    background-color:#e67e22;
+    margin: 0 auto;
+    margin-top:20px;
+}
 /*------------------------------------------------*/
 /*-------------BUTTONS----------------------------*/
 /*------------------------------------------------*/
