@@ -145,3 +145,8 @@ h2:after{
 .min-nav li a:active{
     border-bottom: 2px solid #cb6c18; 
 }
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
