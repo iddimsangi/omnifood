@@ -25,7 +25,13 @@ html{
 section{
     padding: 80px 0px;
 }
-
+.box{
+    padding: 1%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
 /*------------------------------------------------*/
 /*-------------HEADER SECTION-----------------------*/
 /*------------------------------------------------*/
@@ -46,10 +52,10 @@ header{
 /*------------------------------------------------*/
 /*-------------HEADING-----------------------*/
 /*------------------------------------------------*/
-h1,h2{
+h1,h2,h3{
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
+   
     
 }
 h1{
@@ -58,12 +64,14 @@ h1{
     font-size: 240%;
     color: #fff;
     word-spacing: 3px;
+     letter-spacing: 1px;
 }
 h2{
     font-size: 180%;
     text-align: center;
     word-spacing: 2px;
     margin-bottom: 20px;
+     letter-spacing: 1px;
 }
 h2:after{
     display: block;
@@ -73,6 +81,10 @@ h2:after{
     background-color:#e67e22;
     margin: 0 auto;
     margin-top:20px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 20px;
 }
 /*------------------------------------------------*/
 /*-------------BUTTONS----------------------------*/
@@ -149,4 +161,23 @@ h2:after{
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
+}
+
+.meal-showcase {
+    list-style: none;
+    width: 100%;
+}
+.meal-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+}
+.meal-photo img{
+    width: 100%;
+    height: auto;
 }
