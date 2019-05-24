@@ -14,7 +14,14 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
-
+.clearfix{zoom:1}
+.clearfix:after{
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
 /*------------------------------------------------*/
 /*-------------REUSABLE COMPONENTS-----------------------*/
 /*------------------------------------------------*/
@@ -39,6 +46,7 @@ header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
     background-size: cover;
     background-position: center;
+	background-attachment: fixed;
     height: 100vh;
 }
 .hero-text-box{
@@ -98,7 +106,7 @@ h3{
     text-decoration: none;
     border-radius: 200px;
     margin-right: 20px;
-    transition: background-color:0.2s, border:0.2s;
+    transition: background-color 0.2s, border 0.2s;
 }
 
 .btn-full:link,
@@ -150,7 +158,7 @@ h3{
     font-size: 90%;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
-    transition:border-bottom:0.2s;
+    transition:border-bottom 0.2s;
     
 }
 .min-nav li a:hover,
@@ -166,18 +174,104 @@ h3{
 .meal-showcase {
     list-style: none;
     width: 100%;
+	
 }
 .meal-showcase li{
     display: block;
     float: left;
     width: 25%;
+	background-color: #000;
 }
 
 .meal-photo {
     width: 100%;
     margin: 0;
+    overflow: hidden;
+	opacity: 0.7;
+	
 }
 .meal-photo img{
     width: 100%;
     height: auto;
+    transform: scale(1.15);
+    transition: transform 0.2s;
+}
+.meal-photo img:hover{
+    transform: scale(1.03);
+}
+.section-meal {
+    padding: 0;
+}
+
+.icon-big {
+    font-size: 50px;
+    color:#e67e22; 
+}
+
+
+/*
+.step-box:{
+	margin-top: 30px;
+}
+.step-box:first-child{
+	text-align: right;
+	margin-right: 3%;
+}
+.step-box:last-child{
+	padding-left: 3%;
+}
+.step-box:last-child{
+	margin-left: 3%;
+}
+
+.iphone-screen {
+	width: 40%;
+}
+*/
+
+.step-box {
+	
+}
+.step-box:first-child{
+	text-align: right;
+	padding-right: 2%;
+	margin-top: 30px;
+}
+.step-box:last-child{
+	padding-left: 2%;
+	margin-top:70px;
+}
+
+.iphone-screen {
+	width: 40%;
+}
+
+.section-steps {
+	background-color: #f4f4f4;
+}
+
+.works-step {
+	margin-bottom: 50px;
+}
+.works-step:last-of-type{
+	margin-bottom: 80px;
+}
+.works-step div{
+	color:#e67e22;
+	border: 2px solid #e67e22;
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	font-size: 150%;
+	margin-right: 15px;
+}
+
+.app-store img {
+	height: 50px;
+	width: auto;
+	margin-right: 30px;
 }
