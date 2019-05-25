@@ -308,3 +308,34 @@ h3{
 .city {
 	margin-bottom: 10px;
 }
+
+.test {
+	display: block;
+	width:30%;
+}
+
+.cust img {
+	display:inline-block;
+	float: left;
+	margin-top: 25px;
+	width: 100px;
+	height: auto;
+	border-radius: 200px;
+}
+
+cite {
+	margin-top: 30px;
+/*
+	padding-left: 20px;
+	padding-bottom: 5px;
+	
+*/
+}
+
+.testimonial-sect {
+	color: #fff;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.72),rgba(0, 0, 0, 0.72)),url(img/back-customers.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
