@@ -277,8 +277,9 @@ h3{
 }
 
 .city-sect img {
-	width:250px;
+	width:100%;
 	height: auto;
+	margin-bottom: 15px;
 }
 
 .icon-small {
@@ -290,7 +291,20 @@ h3{
 	margin-right: 15px;
 }
 
-.city a {
+.city a:link,
+.city a:visited{
 	text-decoration: none;
-	color: 
+	color:#e67e22;
+	border-bottom: 1px solid #e67e22;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+.city a:hover,
+.city a:active{
+	border-bottom: 1px solid transparent;
+	color:#555;
+}
+
+
+.city {
+	margin-bottom: 10px;
 }
